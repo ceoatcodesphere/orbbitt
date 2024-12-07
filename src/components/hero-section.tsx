@@ -4,7 +4,7 @@ import React from "react";
 export function HeroSection() {
   return (
    
-      <div className="mt-36 flex flex-col justify-center gap-4">
+      <div className="flex h-screen pb-36 flex-col justify-center gap-4">
         <h2 className="text-4xl w-[80%] mx-auto z-20 md:text-4xl lg:text-7xl font-bold text-center text-white font-sans tracking-tight">
         Connecting <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500"> Communities</span>, Building  Careers. 
           <div className="relative mx-auto inline-block w-max">
