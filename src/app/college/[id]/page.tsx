@@ -7,6 +7,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { FaMapMarkerAlt, FaGlobe } from "react-icons/fa";
 import Link from "next/link";
 import { getAuth, signOut, User } from "firebase/auth";  // Import User type
+import Image from "next/image";
 
 interface College {
   id: string;
@@ -179,9 +180,11 @@ export default function CollegeDetails() {
   className="bg-white rounded-3xl flex justify-center items-center"
   style={{ flex: "1 1 40%" }}
 >
-  <img
+  <Image
     src={college.imageUrl}
     alt={college.name}
+    width={12}
+    height={12}
     style={{
       width: "342px",
       objectFit: "cover", // Ensures the image looks good in its container
