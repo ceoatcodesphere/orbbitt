@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+
 import { FaSearch } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { MdCreateNewFolder } from "react-icons/md";
@@ -36,19 +36,18 @@ function FeaturesSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <motion.div
+            <div
               key={index}
               className="bg-slate-800 rounded-lg shadow-lg p-6 hover:bg-slate-700 transition-colors"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+          
+           
             >
               <div className="mb-4">{feature.icon}</div>
               <h3 className="text-xl font-semibold text-white mb-2">
                 {feature.title}
               </h3>
               <p className="text-slate-400">{feature.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
