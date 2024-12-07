@@ -7,6 +7,7 @@ import { collection, getDocs } from "firebase/firestore";
 import Link from "next/link";
 import { signOut, User } from 'firebase/auth';
 import { auth } from '../../../firebase'; // Adjust the path based on your project structure
+import Image from "next/image";
 
 // Define the type for a college
 interface College {
@@ -214,9 +215,11 @@ export default function CollegeDisplay() {
             }}
           >
             <div className=" bg-white rounded-[22px]">
-              <img
+              <Image
                 src={college.imageUrl}
                 alt={college.name}
+                width={12}
+                height={12}
                 className="object-contain rounded-[22px] w-full h-60"
                 style={{
                   borderRadius: "16px",
