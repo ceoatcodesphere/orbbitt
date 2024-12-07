@@ -1,9 +1,7 @@
 "use client";
-
-import { motion } from "framer-motion";
 import React from "react";
 import { Button } from "./ui/button";
-import Image from "next/image";
+
 
 function ExampleSection() {
   return (
@@ -11,14 +9,11 @@ function ExampleSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-12 items-center">
           {/* SVG Motion Section */}
-          <motion.div
+          <div
          
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
           >
-          <Image width={1000} height={1000} src="https://www.qodrr.com/static/media/About%20Illustration.2d01e3bc.png" alt="" />
-          </motion.div>
+          <img  src="https://www.qodrr.com/static/media/About%20Illustration.2d01e3bc.png" alt="" />
+          </div>
           
           {/* Text and Button Section */}
           <div>
