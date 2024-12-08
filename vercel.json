@@ -2,13 +2,13 @@
   "rewrites": [
     {
       "source": "/",
+      "destination": "/creation-collage",
       "has": [
         {
           "type": "host",
-          "value": "college.orbbitt.in"
+          "value": "collages.orbbitt.in"
         }
-      ],
-      "destination": "/creation-collage"
+      ]
     }
   ]
 }
