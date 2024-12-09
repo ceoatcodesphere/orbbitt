@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/creation-collage",
+      "has": [
+        {
+          "type": "host",
+          "value": "colleges.orbbitt.in"
+        }
+      ]
+    }
+  ]
+}

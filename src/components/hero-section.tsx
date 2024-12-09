@@ -14,7 +14,11 @@ export function HeroSection() {
       </header>
 
       {/* Button Section */}
+
       <div className="mb-20">
+
+      <div className="mb-48">
+
         <a href="/search" className="group inline-flex">
           <div className="relative rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
             <div className="" />
@@ -24,6 +28,8 @@ export function HeroSection() {
           </div>
         </a>
       </div>
+      </div>
     </section>
+    
   );
 }
