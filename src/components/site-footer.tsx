@@ -19,7 +19,7 @@ const SiteFooter = () => (
           margin: 0,
         }}
       >
-        © 2024 Orbbitt. All rights reserved.
+     Thanks For Visiting
       </p>
     </div>
   </footer>
