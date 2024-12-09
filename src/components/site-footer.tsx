@@ -1,15 +1,28 @@
 import React from "react";
 
-function SiteFooter() {
-  return (
-    <footer className=" py-12">
-      <div className="border-t border-slate-800 pt-8 flex flex-col items-center">
-        <p className="text-sm text-slate-400 text-center">
-         Thanks for visiting
-        </p>
-      </div>
-    </footer>
-  );
-}
+const SiteFooter = () => (
+  <footer style={{ padding: "3rem 0" }}>
+    <div
+      style={{
+        borderTop: "1px solid #2d3748",
+        paddingTop: "2rem",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <p
+        style={{
+          fontSize: "0.875rem",
+          color: "#94a3b8",
+          textAlign: "center",
+          margin: 0,
+        }}
+      >
+        © 2024 Orbbitt. All rights reserved.
+      </p>
+    </div>
+  </footer>
+);
 
 export default SiteFooter;
