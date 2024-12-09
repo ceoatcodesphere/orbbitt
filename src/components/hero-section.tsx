@@ -17,7 +17,7 @@ export function HeroSection() {
 
       <div className="mb-20">
 
-      <div className="mb-48">
+      <div className="mb-24">
 
         <a href="/search" className="group inline-flex">
           <div className="relative rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
