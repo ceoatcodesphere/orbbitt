@@ -164,34 +164,37 @@ export default function CollegeDisplay() {
           margin: "20px auto",
         }}
       >
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search by course name..."
-          style={{
-            padding: "12px",
-            width: "100%",
-            borderRadius: "25px",
-            border: "1px solid #ced4da",
-            outline: "none",
-            fontSize: "16px",
-          }}
-        />
-        <input
-          type="text"
-          value={locationTerm}
-          onChange={(e) => setLocationTerm(e.target.value)}
-          placeholder="Search by location..."
-          style={{
-            padding: "12px",
-            width: "100%",
-            borderRadius: "25px",
-            border: "1px solid #ced4da",
-            outline: "none",
-            fontSize: "16px",
-          }}
-        />
+       <input
+  type="text"
+  value={searchTerm}
+  onChange={(e) => setSearchTerm(e.target.value)}
+  placeholder="Search by course name..."
+  style={{
+    padding: "12px",
+    width: "100%",
+    borderRadius: "25px",
+    border: "1px solid  #ced4da",
+    outline: "none",
+    fontSize: "16px",
+    color: "black", // Set text color to black
+  }}
+/>
+<input
+  type="text"
+  value={locationTerm}
+  onChange={(e) => setLocationTerm(e.target.value)}
+  placeholder="Search by location..."
+  style={{
+    padding: "12px",
+    width: "100%",
+    borderRadius: "25px",
+    border: "1px solid #ced4da",
+    outline: "none",
+    fontSize: "16px",
+    color: "black", // Set text color to black
+  }}
+/>
+
       </div>
 
       <div
