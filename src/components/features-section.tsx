@@ -32,7 +32,7 @@ function FeaturesSection() {
     <section className="py-5 lg:py-32 pb-20 backdrop-blur-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white text-center mb-12">
-          Everything you need to build modern UIs
+          Everything you need to build a career
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
