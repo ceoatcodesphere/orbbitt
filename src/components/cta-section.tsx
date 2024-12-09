@@ -1,25 +1,69 @@
 import React from "react";
 import { Button } from "./ui/button";
 
-function CTASection() {
+const CTASection = () => {
   return (
-    <section className="py-20 sm:py-32 mb-20 px-4">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+    <div style={{ padding: "5rem 1rem", marginBottom: "5rem", textAlign: "center" }}>
+      <div
+        style={{
+          maxWidth: "72rem",
+          margin: "0 auto",
+          paddingLeft: "1rem",
+          paddingRight: "1rem",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "2.25rem",
+            fontWeight: "800",
+            color: "#fff",
+            marginBottom: "1.5rem",
+          }}
+        >
           Ready to get started?
         </h2>
-        <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-          Get started with Orbbitt and build you career.
+        <p
+          style={{
+            fontSize: "1.25rem",
+            color: "#cbd5e1",
+            marginBottom: "2.5rem",
+            maxWidth: "32rem",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          Get started with Orbbitt and build your career.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-      <a href="/search">  <Button className="bg-sky-500 hover:bg-sky-400 text-white font-semibold h-12 px-8 rounded-lg transition-colors">
-            Get started for free
-          </Button></a>  
-      
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1rem",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <a href="/search" style={{ textDecoration: "none" }}>
+            <Button
+              style={{
+                backgroundColor: "#38bdf8",
+                color: "#fff",
+                fontWeight: "600",
+                height: "3rem",
+                padding: "0 2rem",
+                borderRadius: "0.5rem",
+                transition: "background-color 0.3s",
+              }}
+              onMouseOver={(e) => (e.currentTarget.style.backgroundColor = "#0ea5e9")}
+              onMouseOut={(e) => (e.currentTarget.style.backgroundColor = "#38bdf8")}
+            >
+              Get started for free
+            </Button>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default CTASection;
