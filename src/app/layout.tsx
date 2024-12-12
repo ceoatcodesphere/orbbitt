@@ -30,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} dark antialiased bg-gradient-to-r font-sans from-gray-900 via-gray-800 to-black`}
       >
+        <meta name="google-site-verification" content="8E4pLYMXLT2QnpN2tQNiL9Jd6pV99KhzQLMrsFG4Vkk" />
         <meta name="google-adsense-account" content="ca-pub-1275542292926934"></meta>
         <link rel="shortcut icon" href="/public/28314227_6-ai.svg" type="image/x-icon" />
         {children}
