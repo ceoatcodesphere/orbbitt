@@ -72,7 +72,7 @@ const Auth = () => {
   return (
     <div className=' h-screen'>    
       <header className="mb-7">
-    <div className="container text-white bg-transparent mx-auto flex justify-between items-center p-2 lg:p-10">
+    <div className="container text-white bg-transparent mx-auto sm:text-white flex justify-between items-center p-2 lg:p-10">
       {/* Logo */}
       <div className="text-4xl font-bold">
   <h1>
