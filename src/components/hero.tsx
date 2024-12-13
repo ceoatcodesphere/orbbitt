@@ -10,7 +10,7 @@ export function GridBackgroundDemo() {
         <a href="/search">
           <button className="border border-white hover:bg-white hover:text-black text-white px-6 rounded-full flex items-center space-x-3 hover:shadow-lg transition-all">
             {/* Icon */}
-            <span className="text-xl">✨</span>
+
 
             {/* Button Text */}
             <span className="text-lg font-semibold">Get started</span>
