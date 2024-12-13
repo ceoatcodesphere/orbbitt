@@ -115,7 +115,7 @@ const Auth = () => {
         isOpen ? 'max-h-100 opacity-100' : 'max-h-0 opacity-0'
       }`}
     >
-      <nav className="text-center">
+      <nav className="text-center text-white">
         <Link href="/" className="block px-6 py-3 text-lg hover:bg-gray-100 hover:text-black ">Home</Link>
         <Link href="/creation-collage" className="block px-6 py-3 text-lg hover:bg-gray-100 hover:text-black ">Add your college</Link>
         <Link href="/search" className="block px-6 py-3 text-lg hover:bg-gray-100 hover:text-black ">Search a college</Link>
