@@ -126,67 +126,66 @@ const Auth = () => {
     <div className="flex justify-center items-center  ">
     
 
-      <div className="border-white border p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 className="text-2xl font-bold text-white text-center mb-6">{isSignUp ? 'Sign Up' : 'Login'}</h2>
-        {error && <div className="text-red-500 text-center mb-4">{error}</div>}
+    <div className="flex justify-center items-center px-4 sm:px-6 lg:px-8">
+  <div className="border-white border p-8 rounded-lg shadow-lg w-full max-w-md ">
+    <h2 className="text-2xl font-bold text-center mb-6">{isSignUp ? 'Sign Up' : 'Login'}</h2>
+    {error && <div className="text-red-500 text-center mb-4">{error}</div>}
 
-        <form onSubmit={handleEmailLogin} className="space-y-4">
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="w-full p-3 border border-gray-300 rounded-lg"
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="w-full p-3 border border-gray-300 rounded-lg"
-          />
-          <button
-            type="submit"
-            className="w-full p-3 border border-white text-white rounded-lg hover:bg-white hover:text-black hover:border-black  transition"
-          >
-            {isSignUp ? 'Sign Up' : 'Login'}
-          </button>
-        </form>
+    <form onSubmit={handleEmailLogin} className="space-y-4">
+      <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+        className="w-full p-3 border text-black border-gray-300 rounded-lg"
+      />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+        className="w-full p-3 border text-black border-gray-300 rounded-lg"
+      />
+      <button
+        type="submit"
+        className="w-full p-3 border border-white text-white rounded-lg hover:bg-white hover:text-black hover:border-black transition"
+      >
+        {isSignUp ? 'Sign Up' : 'Login'}
+      </button>
+    </form>
 
-        <button
-          onClick={handleGoogleLogin}
-          className="w-full mt-4 p-3 text-white border border-white rounded-lg hover:bg-black hover:text-white transition"
-        >
-          Sign in with Google
-        </button>
+    <button
+      onClick={handleGoogleLogin}
+      className="w-full mt-4 p-3 border border-white  text-white rounded-lg hover:bg-white hover:text-black hover:border-black transition"
+    >
+      Sign in with Google
+    </button>
 
-        
-       
+    {isSignUp && isCreator !== null && (
+      <button
+        onClick={handleCreatorCheck}
+        className="w-full mt-4 p-3 bg-green-500 text-white rounded-lg hover:bg-green-700 transition"
+      >
+        Continue
+      </button>
+    )}
 
-        {isSignUp && isCreator !== null && (
-          <button
-            onClick={handleCreatorCheck}
-            className="w-full mt-4 p-3 bg-black text-white rounded-lg transition"
-          >
-            Continue
-          </button>
-        )}
-
-        <p className="mt-4 text-center text-white">
-          {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
-          <span
-            onClick={() => {
-              setIsSignUp(!isSignUp);
-              setError(''); // Clear errors when toggling between Login/Sign Up
-            }}
-            className="text-blue-500 cursor-pointer hover:underline"
-          >
-            {isSignUp ? 'Login' : 'Sign Up'}
-          </span>
-        </p>
-      </div>
+    <p className="mt-4 text-center">
+      {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
+      <span
+        onClick={() => {
+          setIsSignUp(!isSignUp);
+          setError(''); // Clear errors when toggling between Login/Sign Up
+        }}
+        className="text-blue-500 cursor-pointer hover:underline"
+      >
+        {isSignUp ? 'Login' : 'Sign Up'}
+      </span>
+    </p>
+  </div>
+</div>
     </div>
     </div>
   );
